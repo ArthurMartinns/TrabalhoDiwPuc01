@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #0F172A; 
+  }
+  
+  .navbar-brand {
+    color: #F59E0B !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .btn-outline-success {
+    color: #F59E0B;
+    border-color: #F59E0B;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #F59E0B;
+    color: #0F172A;
+  }
+
+  .carousel-item{
+    max-height: 80vh;
+    background-position: center;
+    background-size: cover;
+  }
+  
