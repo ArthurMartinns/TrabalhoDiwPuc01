@@ -91,7 +91,7 @@
 
     <section class="container-fluid">
       <div>
-        <h2 class="title p-2">All Movies</h2>
+        <h2 class="title p-2">Filmes em destaque</h2>
       </div>
       <div id="items" class="d-flex flex-row flex-wrap justify-content-between">
         
@@ -128,7 +128,7 @@
             if (index === 0) cardElement.classList.add("active");
 
             cardElement.innerHTML = `
-                <a href="detalhe.html?id=${item.id}" target="_blank">
+                <a href="detalhe.html?id=${item.id}">
                     <img
                         class="d-block w-100"
                         src="${item.imagem_principal}"
@@ -144,20 +144,22 @@
         });
 
         dados.filmesCards.forEach((item) => {
-          const cardElement = document.createElement("div");
+          const cardElemento = document.createElement("div");
 
-          cardElement.innerHTML = `
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="${item.imagem_principal}" alt="Imagem de capa do card">
+          cardElemento.innerHTML = `
+          <a href="detalhe.html?id=${item.id}">
+            <div class="card" style="width: 18rem; background-color:transparent;">
+              <img class="card-img-top" src=${item.imagem_principal} alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">${item.titulo}</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                <a href="#" class="btn btn-primary">Visitar</a>
+                <p class="card-text">${item.descricao}</p>
+                <a href="detalhe.html?id=${item.id}" class="btn btn-primary">Visitar</a>
               </div>
             </div>
+          </a>
           `;
 
-          cardList.appendChild(cardElement);
+          cardList.appendChild(cardElemento);
         })
     </script>
     </script>

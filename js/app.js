@@ -13,12 +13,12 @@ const dados = {
       "imagens_complementares": [
         {
           "id": 1,
-          "src": "img/shutter_island1.jpg",
+          "src": "assets/shutter_island1.jpg",
           "descricao": "Teddy Daniels chegando à ilha"
         },
         {
           "id": 2,
-          "src": "img/shutter_island2.jpg",
+          "src": "assets/shutter_island2.jpg",
           "descricao": "Hospital Ashecliffe ao fundo"
         }
       ]
@@ -36,12 +36,12 @@ const dados = {
       "imagens_complementares": [
         {
           "id": 1,
-          "src": "img/dark_matters1.jpg",
+          "src": "assets/dark_matters1.jpg",
           "descricao": "Liu Xing em sala de aula"
         },
         {
           "id": 2,
-          "src": "img/dark_matters2.jpg",
+          "src": "assets/dark_matters2.jpg",
           "descricao": "Cena de conflito acadêmico"
         }
       ]
@@ -59,12 +59,12 @@ const dados = {
       "imagens_complementares": [
         {
           "id": 1,
-          "src": "img/contratiempo1.jpg",
+          "src": "assets/contratiempo1.jpg",
           "descricao": "Adrián Doria em interrogatório"
         },
         {
           "id": 2,
-          "src": "img/contratiempo2.jpg",
+          "src": "assets/contratiempo2.jpg",
           "descricao": "Quarto do crime"
         }
       ]
@@ -80,10 +80,10 @@ const dados = {
       "diretor": "David Fincher",
       "destaque": true,
       "data_lancamento": "2014-10-03",
-      "imagem_principal": "img/gone_girl.jpg",
+      "imagem_principal": "assets/goneGirl.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/gone_girl1.jpg", "descricao": "Nick em entrevista" },
-        { "id": 2, "src": "img/gone_girl2.jpg", "descricao": "Cartaz de desaparecida de Amy" }
+        { "id": 1, "src": "assets/gone_girl1.jpg", "descricao": "Nick em entrevista" },
+        { "id": 2, "src": "assets/gone_girl2.jpg", "descricao": "Cartaz de desaparecida de Amy" }
       ]
     },
     {
@@ -95,10 +95,10 @@ const dados = {
       "diretor": "Denis Villeneuve",
       "destaque": false,
       "data_lancamento": "2013-09-20",
-      "imagem_principal": "img/prisoners.jpg",
+      "imagem_principal": "assets/osSuspeitos.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/prisoners1.jpg", "descricao": "Keller enfrentando suspeito" },
-        { "id": 2, "src": "img/prisoners2.jpg", "descricao": "Detetive Loki investigando" }
+        { "id": 1, "src": "assets/prisoners1.jpg", "descricao": "Keller enfrentando suspeito" },
+        { "id": 2, "src": "assets/prisoners2.jpg", "descricao": "Detetive Loki investigando" }
       ]
     },
     {
@@ -110,10 +110,10 @@ const dados = {
       "diretor": "Juan José Campanella",
       "destaque": true,
       "data_lancamento": "2009-08-13",
-      "imagem_principal": "img/segredo_olhos.jpg",
+      "imagem_principal": "assets/osSegredosDosSeusOlhos.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/segredo_olhos1.jpg", "descricao": "Benjamín lendo processo" },
-        { "id": 2, "src": "img/segredo_olhos2.jpg", "descricao": "Cena de estádio" }
+        { "id": 1, "src": "assets/segredo_olhos1.jpg", "descricao": "Benjamín lendo processo" },
+        { "id": 2, "src": "assets/segredo_olhos2.jpg", "descricao": "Cena de estádio" }
       ]
     },
     {
@@ -125,10 +125,10 @@ const dados = {
       "diretor": "Denis Villeneuve",
       "destaque": false,
       "data_lancamento": "2014-03-14",
-      "imagem_principal": "img/enemy.jpg",
+      "imagem_principal": "assets/homemDuplicado.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/enemy1.jpg", "descricao": "Adam observando dublê" },
-        { "id": 2, "src": "img/enemy2.jpg", "descricao": "Cena simbólica com aranha" }
+        { "id": 1, "src": "assets/enemy1.jpg", "descricao": "Adam observando dublê" },
+        { "id": 2, "src": "assets/enemy2.jpg", "descricao": "Cena simbólica com aranha" }
       ]
     },
     {
@@ -140,10 +140,10 @@ const dados = {
       "diretor": "Guillermo del Toro",
       "destaque": false,
       "data_lancamento": "2006-10-11",
-      "imagem_principal": "img/fauno.jpg",
+      "imagem_principal": "assets/oLabirinto.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/fauno1.jpg", "descricao": "Ofelia e o fauno" },
-        { "id": 2, "src": "img/fauno2.jpg", "descricao": "O monstro pálido" }
+        { "id": 1, "src": "assets/fauno1.jpg", "descricao": "Ofelia e o fauno" },
+        { "id": 2, "src": "assets/fauno2.jpg", "descricao": "O monstro pálido" }
       ]
     },
     {
@@ -155,10 +155,10 @@ const dados = {
       "diretor": "Alejandro Amenábar",
       "destaque": true,
       "data_lancamento": "2001-08-02",
-      "imagem_principal": "img/the_others.jpg",
+      "imagem_principal": "assets/theOthers.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/the_others1.jpg", "descricao": "Grace com uma lanterna" },
-        { "id": 2, "src": "img/the_others2.jpg", "descricao": "Filhos com véus" }
+        { "id": 1, "src": "assets/the_others1.jpg", "descricao": "Grace com uma lanterna" },
+        { "id": 2, "src": "assets/the_others2.jpg", "descricao": "Filhos com véus" }
       ]
     },
     {
@@ -170,10 +170,10 @@ const dados = {
       "diretor": "Rowan Joffé",
       "destaque": false,
       "data_lancamento": "2014-09-05",
-      "imagem_principal": "img/before_i_go_to_sleep.jpg",
+      "imagem_principal": "assets/antesDormir.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/before1.jpg", "descricao": "Christine se olhando no espelho" },
-        { "id": 2, "src": "img/before2.jpg", "descricao": "Cena de tensão em casa" }
+        { "id": 1, "src": "assets/before1.jpg", "descricao": "Christine se olhando no espelho" },
+        { "id": 2, "src": "assets/before2.jpg", "descricao": "Cena de tensão em casa" }
       ]
     },
     {
@@ -185,10 +185,10 @@ const dados = {
       "diretor": "Christopher Nolan",
       "destaque": true,
       "data_lancamento": "2000-10-11",
-      "imagem_principal": "img/memento.jpg",
+      "imagem_principal": "assets/memento.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/memento1.jpg", "descricao": "Leonard com fotos nas mãos" },
-        { "id": 2, "src": "img/memento2.jpg", "descricao": "Tatuagens com pistas" }
+        { "id": 1, "src": "assets/memento1.jpg", "descricao": "Leonard com fotos nas mãos" },
+        { "id": 2, "src": "assets/memento2.jpg", "descricao": "Tatuagens com pistas" }
       ]
     },
     {
@@ -200,10 +200,10 @@ const dados = {
       "diretor": "Darren Aronofsky",
       "destaque": false,
       "data_lancamento": "2010-12-03",
-      "imagem_principal": "img/black_swan.jpg",
+      "imagem_principal": "assets/cisneNegro.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/black_swan1.jpg", "descricao": "Nina em ensaio" },
-        { "id": 2, "src": "img/black_swan2.jpg", "descricao": "Transformação no palco" }
+        { "id": 1, "src": "assets/black_swan1.jpg", "descricao": "Nina em ensaio" },
+        { "id": 2, "src": "assets/black_swan2.jpg", "descricao": "Transformação no palco" }
       ]
     },
     {
@@ -215,10 +215,10 @@ const dados = {
       "diretor": "J.A. Bayona",
       "destaque": false,
       "data_lancamento": "2007-10-11",
-      "imagem_principal": "img/orfanato.jpg",
+      "imagem_principal": "assets/orfanato.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/orfanato1.jpg", "descricao": "Laura procurando o filho" },
-        { "id": 2, "src": "img/orfanato2.jpg", "descricao": "Máscara misteriosa" }
+        { "id": 1, "src": "assets/orfanato1.jpg", "descricao": "Laura procurando o filho" },
+        { "id": 2, "src": "assets/orfanato2.jpg", "descricao": "Máscara misteriosa" }
       ]
     },
     {
@@ -230,10 +230,10 @@ const dados = {
       "diretor": "M. Night Shyamalan",
       "destaque": true,
       "data_lancamento": "2017-01-20",
-      "imagem_principal": "img/split.jpg",
+      "imagem_principal": "assets/fragmentado.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/split1.jpg", "descricao": "Kevin em uma das personalidades" },
-        { "id": 2, "src": "img/split2.jpg", "descricao": "Garotas presas no porão" }
+        { "id": 1, "src": "assets/split1.jpg", "descricao": "Kevin em uma das personalidades" },
+        { "id": 2, "src": "assets/split2.jpg", "descricao": "Garotas presas no porão" }
       ]
     },
     {
@@ -245,10 +245,10 @@ const dados = {
       "diretor": "Ron Howard",
       "destaque": false,
       "data_lancamento": "2006-05-19",
-      "imagem_principal": "img/da_vinci.jpg",
+      "imagem_principal": "assets/codigoDaVinci.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "img/da_vinci1.jpg", "descricao": "Langdon no Louvre" },
-        { "id": 2, "src": "img/da_vinci2.jpg", "descricao": "Pistas no quadro de Da Vinci" }
+        { "id": 1, "src": "assets/da_vinci1.jpg", "descricao": "Langdon no Louvre" },
+        { "id": 2, "src": "assets/da_vinci2.jpg", "descricao": "Pistas no quadro de Da Vinci" }
       ]
     }
   ]
