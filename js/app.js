@@ -69,6 +69,8 @@ const dados = {
         }
       ]
     },
+  ],
+  "filmesCards": [
     {
       "id": 4,
       "titulo": "Garota Exemplar",

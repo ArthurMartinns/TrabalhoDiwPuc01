@@ -93,6 +93,9 @@
       <div>
         <h2 class="title p-2">All Movies</h2>
       </div>
+      <div id="items" class="d-flex flex-row flex-wrap justify-content-between">
+        
+      </div>
     </section>
 
     <script
@@ -115,6 +118,7 @@
 
     <script>
         const bannerItems = document.getElementById("carousel-inner");
+        const cardList = document.getElementById("items")
 
         dados.filmes.forEach((item, index) => {
             const cardElement = document.createElement("div");
@@ -138,6 +142,23 @@
 
             bannerItems.appendChild(cardElement);
         });
+
+        dados.filmesCards.forEach((item) => {
+          const cardElement = document.createElement("div");
+
+          cardElement.innerHTML = `
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="${item.imagem_principal}" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">${item.titulo}</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                <a href="#" class="btn btn-primary">Visitar</a>
+              </div>
+            </div>
+          `;
+
+          cardList.appendChild(cardElement);
+        })
     </script>
     </script>
   </body>
