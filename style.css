@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
   }
   
   body {
@@ -52,5 +53,31 @@
   }
   section .title {
     color: #fff;
+  }
+
+  .left img {
+    border-radius: 20px;
+    background-color: #223042;
+  }
+
+  .right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fff ;
+    border: none;
+  }
+   .card-about{
+    background-color: #223042;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
   }
   

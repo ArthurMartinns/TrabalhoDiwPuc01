@@ -8,7 +8,6 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -60,51 +59,38 @@
     </div>
   </section>
 
-  <section class="container-fluid">
+  <section class="container-fluid ">
     <div>
-      <h2 class="title p-2">Informações do aluno</h2>
+      <h2 class="title p-2">Arthur Martins</h2>
     </div>
-    <div class="d-flex flex-row justify-content-between p-2" style="gap: 2.4rem;">
-      <p style="max-width: 600px; text-align: justify;">
-        Meu nome é Arthur Martins, estou cursando o primeiro período de Engenharia de Software e atualmente trabalho
-        como desenvolvedor
-        front-end. Tenho buscado aplicar no dia a dia os conhecimentos adquiridos tanto na prática profissional quanto
-        nas aulas da graduação. Este trabalho faz parte da disciplina de Desenvolvimento de Interfaces Web e tem como
-        objetivo colocar em prática os conceitos aprendidos, desenvolvendo interfaces que sejam funcionais, acessíveis e
-        voltadas para a melhor experiência do usuário.
-      </p>
-      <ul class="w-100 d-flex flex-column justify-content-between" style="max-width: 500px;">
-        <li>
-          <strong>
-            Nome: 
-          </strong>
-          Arthur Martins 
-        </li>
-        <li>
-          <strong>
-            Matrícula:
-          </strong>
-          1581559
-        </li>
-        <li>
-          <strong>
-            Curso: 
-          </strong>
-          Engenharia de Software
-        </li>
-        <li>
-          <strong>
-            Período:
-          </strong>
-          Primeiro período
-        </li>
-        <li>
-          <strong>
-            Turno:
-          </strong>
-          Noite
-        </li>
-      </ul>
+
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between p-2" style="gap: 2.4rem;">
+      <div class="left">
+        <img src="assets/me.webp" style="width: 100%; max-width: 450px;" alt="Foto Arthur">
+      </div>
+
+      <div class="right w-100">
+        <div class="about-me">
+          <div class="card-about d-flex flex-column" style="gap: 8px;">
+            <h5>Informações Acadêmicas</h5>
+            <ul class="list-group list-group-flush">
+              <li class=""><strong>Matrícula:</strong> 1581559</li>
+              <li class=""><strong>Curso:</strong> Engenharia de Software</li>
+              <li class=""><strong>Periodo:</strong> Primeiro período</li>
+            </ul>
+            <div  class=" d-flex flex-column" style="gap: 8px;">
+              <h5 style="color: #fff;">Sobre</h5>
+              <p>
+                Meu nome é <strong>Arthur Martins</strong>, estou cursando o primeiro período de <strong>Engenharia de Software</strong> no turno da noite e atuo como <strong>desenvolvedor front-end</strong>.
+                Tenho buscado aplicar no dia a dia os conhecimentos adquiridos tanto na prática profissional quanto nas aulas da graduação.
+                Este trabalho faz parte da disciplina de <strong>Desenvolvimento de Interfaces Web</strong> e tem como objetivo colocar em prática os conceitos aprendidos,
+                desenvolvendo interfaces que sejam funcionais, acessíveis e voltadas para a melhor experiência do usuário.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -152,12 +138,12 @@
 
       cardElemento.innerHTML = `
           <a href="detalhe.html?id=${item.id}">
-            <div class="card" style="width: 18rem; background-color:transparent;">
+            <div class="card" style="width: 18rem; height: 100%; background-color:transparent;">
               <img class="card-img-top" src=${item.imagem_principal} alt="Imagem de capa do card">
-              <div class="card-body">
-                <h5 class="card-title">${item.titulo}</h5>
+              <div class="card-body d-flex flex-column justify-content-between" style="gap:1.5rem;">
+                <h5 class="card-title" style="color: #F59E0B;">${item.titulo}</h5>
                 <p class="card-text">${item.descricao}</p>
-                <a href="detalhe.html?id=${item.id}" class="btn btn-primary">Visitar</a>
+                <a href="detalhe.html?id=${item.id}" class="btn btn-primary w-100" style="background-color: rgba(245, 158, 11, 0.55); border: none;">Visitar</a>
               </div>
             </div>
           </a>

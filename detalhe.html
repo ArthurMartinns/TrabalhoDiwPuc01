@@ -25,37 +25,20 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarContent"
-        >
-          <form class="form-inline my-2 my-lg-0 d-flex flex-row">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Pesquisar"
-              aria-label="Pesquisar"
-              style="background-color: transparent; color: aqua;"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Pesquisar
-            </button>
-          </form>
-        </div>
+        
       </nav>
     </header>
     <section class="p-2">
-      <button class="btn btn-outline-success">
-        <a href="index.html" style="color: #ffffff;">
-          Back to home    
+      <button class="btn btn-warning">
+        <a href="index.html" style="text-decoration: none; color: black;">
+          Voltar    
         </a>
       </button>
     </section>
-    <div id="tela" class="w-100 d-flex items-center p-2" style="gap: 2rem;">
+    <div id="tela" class="w-100 d-flex justify-content-center items-center mt-4 p-2" style="gap: 2rem;">
       
     </div>
-    <div id="telaCards" class="w-100 d-flex items-center p-2" style="gap: 2rem;">
+    <div id="telaCards" class="w-100 d-flex justify-content-center items-center mt-4 p-2" style="gap: 2rem;">
       
     </div>
 
@@ -78,52 +61,58 @@
 
       if (movieData) {
         tela.innerHTML = `
-          <img src="${movieData.imagem_principal}" style="width: 500px;" alt="">
-          <div class="p-2">
-            <h3>
-              ${movieData.titulo}
-            </h3>
-            <p>
-              ${movieData.descricao}
-            </p>
-            <p>
-              ${movieData.sinopse}
-            </p>
-            <p>
-              ${movieData.genero}
-            </p>
-            <p>
-              ${movieData.diretor}
-            </p>
-            <p>
-              ${movieData.data_lancamento}
-            </p>
+          <div style="display: flex; flex-wrap: wrap; background-color: #0F172A; color: #FFF; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+            <img src="${movieData.imagem_principal}" alt="Imagem do filme" style="width: 100%; max-width: 500px; max-height: 500px; object-fit: cover;">
+            <div class="p-4" style="flex: 1; padding: 2rem;">
+              <h3 style="color: #F59E0B; font-weight: bold; margin-bottom: 1rem;">
+                ${movieData.titulo}
+              </h3>
+              <p style="margin-bottom: 1rem;">
+                <strong style="color: #F59E0B;">Descrição:</strong> ${movieData.descricao}
+              </p>
+              <p style="margin-bottom: 1rem;">
+                <strong style="color: #F59E0B;">Sinopse:</strong> ${movieData.sinopse}
+              </p>
+              <p style="margin-bottom: 1rem;">
+                <strong style="color: #F59E0B;">Gênero:</strong> ${movieData.genero}
+              </p>
+              <p style="margin-bottom: 1rem;">
+                <strong style="color: #F59E0B;">Diretor:</strong> ${movieData.diretor}
+              </p>
+              <p>
+                <strong style="color: #F59E0B;">Data de lançamento:</strong> ${movieData.data_lancamento}
+              </p>
+            </div>
           </div>
-        `
+        `;
+
       } else if (movieDataCards) {
-          tela.innerHTML = `
-          <img src="${movieDataCards.imagem_principal}" style="max-width: 500px; max-height: 500px;" alt="">
-          <div class="p-2">
-            <h3>
-               ${movieDataCards.titulo}
-            </h3>
-            <p>
-              <strong>Descrição:</strong> ${movieDataCards.descricao}
-            </p>
-            <p>
-              <strong>Sinopse:</strong> ${movieDataCards.sinopse}
-            </p>
-            <p>
-              <strong>Gênero:</strong> ${movieDataCards.genero}
-            </p>
-            <p>
-              <strong>Diretor:</strong> ${movieDataCards.diretor}
-            </p>
-            <p>
-              <strong>Data de lançamento:</strong> ${movieDataCards.data_lancamento}
-            </p>
+        tela.innerHTML = `
+          <div style="display: flex; flex-wrap: wrap; background-color: #0F172A; color: #FFF; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+            <img src="${movieDataCards.imagem_principal}" alt="Imagem do filme" style="width: 100%; max-width: 500px; max-height: 500px; object-fit: cover;">
+            <div style="flex: 1; padding: 2rem;">
+              <h3 style="color: #F59E0B; font-weight: bold; margin-bottom: 1rem;">
+                ${movieDataCards.titulo}
+              </h3>
+              <p style="margin-bottom: 1rem;">
+                <strong style="color: #F59E0B;">Descrição:</strong> ${movieDataCards.descricao}
+              </p>
+              <p style="margin-bottom: 1rem;">
+                <strong style="color: #F59E0B;">Sinopse:</strong> ${movieDataCards.sinopse}
+              </p>
+              <p style="margin-bottom: 1rem;">
+                <strong style="color: #F59E0B;">Gênero:</strong> ${movieDataCards.genero}
+              </p>
+              <p style="margin-bottom: 1rem;">
+                <strong style="color: #F59E0B;">Diretor:</strong> ${movieDataCards.diretor}
+              </p>
+              <p>
+                <strong style="color: #F59E0B;">Data de lançamento:</strong> ${movieDataCards.data_lancamento}
+              </p>
+            </div>
           </div>
-        `
+        `;
+
       } else {
         tela.innerHTML = `<div class="alert alert-danger" role="alert">Filme não encontrado!</div>`;
       }
