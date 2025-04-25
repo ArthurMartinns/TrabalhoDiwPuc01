@@ -61,6 +61,7 @@
 
       if (movieData) {
         tela.innerHTML = `
+        <div class="d-flex flex-column">
           <div style="display: flex; flex-wrap: wrap; background-color: #0F172A; color: #FFF; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
             <img src="${movieData.imagem_principal}" alt="Imagem do filme" style="width: 100%; max-width: 500px; max-height: 500px; object-fit: cover;">
             <div class="p-4" style="flex: 1; padding: 2rem;">
@@ -84,6 +85,11 @@
               </p>
             </div>
           </div>
+          <div class="w-100 d-flex flex-row justify-content-between p-4">
+              ${movieData.imagens_complementares.map(img => `
+                <img src="${img.src}" alt="Imagem do filme" style="width: 100%; max-width: 300px; max-height: 500px; object-fit: cover;">`)}
+          </div>
+        </div>
         `;
 
       } else if (movieDataCards) {

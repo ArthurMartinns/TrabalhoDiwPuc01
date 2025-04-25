@@ -25,24 +25,30 @@ const dados = {
     },
     {
       "id": 2,
-      "titulo": "Dark Matters",
-      "descricao": "Um estudante chinês se envolve em uma trama de segredos em uma universidade americana.",
-      "sinopse": "Liu Xing, um jovem talentoso em cosmologia, chega aos EUA para estudar em uma universidade de prestígio. Mas conforme sua pesquisa se choca com os interesses de seus orientadores, ele entra em um conflito crescente que o leva por um caminho sombrio.",
+      "titulo": "O Preço da Verdade",
+      "descricao": "Um advogado enfrenta uma poderosa corporação química em uma batalha judicial que expõe um escândalo ambiental.",
+      "sinopse": "Baseado em fatos reais, o filme acompanha Robert Bilott, um advogado ambiental que descobre que uma das maiores corporações químicas do mundo está contaminando uma cidade com produtos tóxicos. À medida que ele se aprofunda no caso, coloca sua carreira, família e vida em risco para revelar a verdade.",
       "genero": "Drama / Suspense",
-      "diretor": "Chen Shi-Zheng",
+      "diretor": "Todd Haynes",
       "destaque": false,
-      "data_lancamento": "2007-01-01",
+      "data_lancamento": "2019-11-22",
       "imagem_principal": "assets/precoDaVerdade.webp",
       "imagens_complementares": [
         {
           "id": 1,
-          "src": "assets/dark_matters1.jpg",
-          "descricao": "Liu Xing em sala de aula"
+          "src": "assets/preco_verdade01.webp"
         },
         {
           "id": 2,
-          "src": "assets/dark_matters2.jpg",
-          "descricao": "Cena de conflito acadêmico"
+          "src": "assets/preco_verdade02.webp"
+        },
+        {
+          "id": 3,
+          "src": "assets/preco_verdade03.webp"
+        },
+        {
+          "id": 4,
+          "src": "assets/preco_verdade04.webp"
         }
       ]
     },
