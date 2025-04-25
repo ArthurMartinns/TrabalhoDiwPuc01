@@ -52,10 +52,10 @@
         </a>
       </button>
     </section>
-    <div id="tela" class="w-100 border d-flex items-center p-2">
+    <div id="tela" class="w-100 d-flex items-center p-2" style="gap: 2rem;">
       
     </div>
-    <div id="telaCards" class="w-100 border d-flex items-center p-2">
+    <div id="telaCards" class="w-100 d-flex items-center p-2" style="gap: 2rem;">
       
     </div>
 
@@ -75,7 +75,6 @@
       })
 
       let tela = document.getElementById("tela");
-      console.log(movieData)
 
       if (movieData) {
         tela.innerHTML = `
@@ -103,25 +102,25 @@
         `
       } else if (movieDataCards) {
           tela.innerHTML = `
-          <img src="${movieDataCards.imagem_principal}" style="width: 500px;" alt="">
+          <img src="${movieDataCards.imagem_principal}" style="max-width: 500px; max-height: 500px;" alt="">
           <div class="p-2">
             <h3>
-              ${movieDataCards.titulo}
+               ${movieDataCards.titulo}
             </h3>
             <p>
-              ${movieDataCards.descricao}
+              <strong>Descrição:</strong> ${movieDataCards.descricao}
             </p>
             <p>
-              ${movieDataCards.sinopse}
+              <strong>Sinopse:</strong> ${movieDataCards.sinopse}
             </p>
             <p>
-              ${movieDataCards.genero}
+              <strong>Gênero:</strong> ${movieDataCards.genero}
             </p>
             <p>
-              ${movieDataCards.diretor}
+              <strong>Diretor:</strong> ${movieDataCards.diretor}
             </p>
             <p>
-              ${movieDataCards.data_lancamento}
+              <strong>Data de lançamento:</strong> ${movieDataCards.data_lancamento}
             </p>
           </div>
         `

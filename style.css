@@ -11,6 +11,14 @@
   p {
     color: #fff;
   }
+
+  li,ul {
+    color: #fff;
+  }
+
+  li::marker{
+    color: #F59E0B;
+  }
   
   .navbar-brand {
     color: #F59E0B !important;
