@@ -85,7 +85,7 @@
               </p>
             </div>
           </div>
-          <div class="w-100 d-flex flex-row justify-content-between p-4">
+          <div class="w-100 d-flex flex-row justify-content-between p-4 flex-wrap" style="gap: 1rem;">
               ${movieData.imagens_complementares.map(img => `
                 <img src="${img.src}" alt="Imagem do filme" style="width: 100%; max-width: 300px; max-height: 500px; object-fit: cover;">`)}
           </div>
@@ -94,9 +94,10 @@
 
       } else if (movieDataCards) {
         tela.innerHTML = `
+          <div class="d-flex flex-column">
           <div style="display: flex; flex-wrap: wrap; background-color: #0F172A; color: #FFF; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
             <img src="${movieDataCards.imagem_principal}" alt="Imagem do filme" style="width: 100%; max-width: 500px; max-height: 500px; object-fit: cover;">
-            <div style="flex: 1; padding: 2rem;">
+            <div class="p-4" style="flex: 1; padding: 2rem;">
               <h3 style="color: #F59E0B; font-weight: bold; margin-bottom: 1rem;">
                 ${movieDataCards.titulo}
               </h3>
@@ -117,8 +118,12 @@
               </p>
             </div>
           </div>
+          <div class="w-100 d-flex flex-row justify-content-between p-4 flex-wrap" style="gap: 1rem;">
+              ${movieDataCards.imagens_complementares.map(img => `
+                <img src="${img.src}" alt="Imagem do filme" style="width: 100%; max-width: 300px; max-height: 500px; object-fit: cover;">`)}
+          </div>
+        </div>
         `;
-
       } else {
         tela.innerHTML = `<div class="alert alert-danger" role="alert">Filme não encontrado!</div>`;
       }

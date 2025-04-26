@@ -13,14 +13,20 @@ const dados = {
       "imagens_complementares": [
         {
           "id": 1,
-          "src": "assets/shutter_island1.jpg",
-          "descricao": "Teddy Daniels chegando à ilha"
+          "src": "assets/ilha_medo01.webp",
         },
         {
           "id": 2,
-          "src": "assets/shutter_island2.jpg",
-          "descricao": "Hospital Ashecliffe ao fundo"
-        }
+          "src": "assets/ilha_medo02.webp",
+        },
+        {
+          "id": 3,
+          "src": "assets/ilha_medo03.webp",
+        },
+        {
+          "id": 4,
+          "src": "assets/ilha_medo04.webp",
+        },
       ]
     },
     {
@@ -65,14 +71,20 @@ const dados = {
       "imagens_complementares": [
         {
           "id": 1,
-          "src": "assets/contratiempo1.jpg",
-          "descricao": "Adrián Doria em interrogatório"
+          "src": "assets/contratempo01.webp",
         },
         {
           "id": 2,
-          "src": "assets/contratiempo2.jpg",
-          "descricao": "Quarto do crime"
-        }
+          "src": "assets/contratempo02.webp",
+        },
+        {
+          "id": 3,
+          "src": "assets/contratempo03.webp",
+        },
+        {
+          "id": 4,
+          "src": "assets/contratempo04.webp",
+        },
       ]
     },
   ],
@@ -88,8 +100,10 @@ const dados = {
       "data_lancamento": "2014-10-03",
       "imagem_principal": "assets/goneGirl.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "assets/gone_girl1.jpg", "descricao": "Nick em entrevista" },
-        { "id": 2, "src": "assets/gone_girl2.jpg", "descricao": "Cartaz de desaparecida de Amy" }
+        { "id": 1, "src": "assets/gone_girl01.webp"},
+        { "id": 2, "src": "assets/gone_girl02.webp" },
+        { "id": 3, "src": "assets/gone_girl03.webp" },
+        { "id": 4, "src": "assets/gone_girl04.webp" },
       ]
     },
     {
@@ -103,8 +117,10 @@ const dados = {
       "data_lancamento": "2013-09-20",
       "imagem_principal": "assets/osSuspeitos.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "assets/prisoners1.jpg", "descricao": "Keller enfrentando suspeito" },
-        { "id": 2, "src": "assets/prisoners2.jpg", "descricao": "Detetive Loki investigando" }
+        { "id": 1, "src": "assets/suspeitos01.webp",  },
+        { "id": 2, "src": "assets/suspeitos02.webp",  },
+        { "id": 3, "src": "assets/suspeitos03.webp",  },
+        { "id": 4, "src": "assets/suspeitos04.webp",  },
       ]
     },
     {
@@ -118,8 +134,10 @@ const dados = {
       "data_lancamento": "2009-08-13",
       "imagem_principal": "assets/osSegredosDosSeusOlhos.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "assets/segredo_olhos1.jpg", "descricao": "Benjamín lendo processo" },
-        { "id": 2, "src": "assets/segredo_olhos2.jpg", "descricao": "Cena de estádio" }
+        { "id": 1, "src": "assets/segredoolhos01.webp",  },
+        { "id": 2, "src": "assets/segredoolhos02.webp",  },
+        { "id": 3, "src": "assets/segredoolhos03.webp",  },
+        { "id": 4, "src": "assets/segredoolhos04.webp",  },
       ]
     },
     {
@@ -133,8 +151,10 @@ const dados = {
       "data_lancamento": "2014-03-14",
       "imagem_principal": "assets/homemDuplicado.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "assets/enemy1.jpg", "descricao": "Adam observando dublê" },
-        { "id": 2, "src": "assets/enemy2.jpg", "descricao": "Cena simbólica com aranha" }
+        { "id": 1, "src": "assets/homeDuplicado01.webp",  },
+        { "id": 2, "src": "assets/homeDuplicado02.webp",  },
+        { "id": 3, "src": "assets/homeDuplicado03.webp",  },
+        { "id": 4, "src": "assets/homeDuplicado04.webp",  },
       ]
     },
     {
@@ -148,8 +168,10 @@ const dados = {
       "data_lancamento": "2006-10-11",
       "imagem_principal": "assets/oLabirinto.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "assets/fauno1.jpg", "descricao": "Ofelia e o fauno" },
-        { "id": 2, "src": "assets/fauno2.jpg", "descricao": "O monstro pálido" }
+        { "id": 1, "src": "assets/labirinto01.webp",  },
+        { "id": 2, "src": "assets/labirinto02.webp",  },
+        { "id": 3, "src": "assets/labirinto03.webp",  },
+        { "id": 4, "src": "assets/labirinto04.webp",  },
       ]
     },
     {
@@ -162,9 +184,11 @@ const dados = {
       "destaque": true,
       "data_lancamento": "2001-08-02",
       "imagem_principal": "assets/theOthers.webp",
-      "imagens_complementares": [
-        { "id": 1, "src": "assets/the_others1.jpg", "descricao": "Grace com uma lanterna" },
-        { "id": 2, "src": "assets/the_others2.jpg", "descricao": "Filhos com véus" }
+     "imagens_complementares": [
+        { "id": 1, "src": "assets/outros01.webp",  },
+        { "id": 2, "src": "assets/outros02.webp",  },
+        { "id": 3, "src": "assets/outros03.webp",  },
+        { "id": 4, "src": "assets/outros04.webp",  },
       ]
     },
     {
@@ -178,8 +202,10 @@ const dados = {
       "data_lancamento": "2014-09-05",
       "imagem_principal": "assets/antesDormir.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "assets/before1.jpg", "descricao": "Christine se olhando no espelho" },
-        { "id": 2, "src": "assets/before2.jpg", "descricao": "Cena de tensão em casa" }
+        { "id": 1, "src": "assets/antes01.webp",  },
+        { "id": 2, "src": "assets/antes02.webp",  },
+        { "id": 3, "src": "assets/antes03.webp",  },
+        { "id": 4, "src": "assets/antes04.webp",  },
       ]
     },
     {
@@ -192,9 +218,11 @@ const dados = {
       "destaque": true,
       "data_lancamento": "2000-10-11",
       "imagem_principal": "assets/memento.webp",
-      "imagens_complementares": [
-        { "id": 1, "src": "assets/memento1.jpg", "descricao": "Leonard com fotos nas mãos" },
-        { "id": 2, "src": "assets/memento2.jpg", "descricao": "Tatuagens com pistas" }
+     "imagens_complementares": [
+        { "id": 1, "src": "assets/memento01.webp",  },
+        { "id": 2, "src": "assets/memento02.webp",  },
+        { "id": 3, "src": "assets/memento03.webp",  },
+        { "id": 4, "src": "assets/memento04.webp",  },
       ]
     },
     {
@@ -208,8 +236,10 @@ const dados = {
       "data_lancamento": "2010-12-03",
       "imagem_principal": "assets/cisneNegro.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "assets/black_swan1.jpg", "descricao": "Nina em ensaio" },
-        { "id": 2, "src": "assets/black_swan2.jpg", "descricao": "Transformação no palco" }
+        { "id": 1, "src": "assets/cisne01.webp",  },
+        { "id": 2, "src": "assets/cisne02.webp",  },
+        { "id": 3, "src": "assets/cisne03.webp",  },
+        { "id": 4, "src": "assets/cisne04.webp",  },
       ]
     },
     {
@@ -223,8 +253,10 @@ const dados = {
       "data_lancamento": "2007-10-11",
       "imagem_principal": "assets/orfanato.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "assets/orfanato1.jpg", "descricao": "Laura procurando o filho" },
-        { "id": 2, "src": "assets/orfanato2.jpg", "descricao": "Máscara misteriosa" }
+        { "id": 1, "src": "assets/orfanato01.webp",  },
+        { "id": 2, "src": "assets/orfanato02.webp",  },
+        { "id": 3, "src": "assets/orfanato03.webp",  },
+        { "id": 4, "src": "assets/orfanato04.webp",  },
       ]
     },
     {
@@ -238,8 +270,10 @@ const dados = {
       "data_lancamento": "2017-01-20",
       "imagem_principal": "assets/fragmentado.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "assets/split1.jpg", "descricao": "Kevin em uma das personalidades" },
-        { "id": 2, "src": "assets/split2.jpg", "descricao": "Garotas presas no porão" }
+        { "id": 1, "src": "assets/fragmentado01.webp",  },
+        { "id": 2, "src": "assets/fragmentado02.webp",  },
+        { "id": 3, "src": "assets/fragmentado03.webp",  },
+        { "id": 4, "src": "assets/fragmentado04.webp",  },
       ]
     },
     {
@@ -253,8 +287,10 @@ const dados = {
       "data_lancamento": "2006-05-19",
       "imagem_principal": "assets/codigoDaVinci.webp",
       "imagens_complementares": [
-        { "id": 1, "src": "assets/da_vinci1.jpg", "descricao": "Langdon no Louvre" },
-        { "id": 2, "src": "assets/da_vinci2.jpg", "descricao": "Pistas no quadro de Da Vinci" }
+        { "id": 1, "src": "assets/codigo01.webp",  },
+        { "id": 2, "src": "assets/codigo02.webp",  },
+        { "id": 3, "src": "assets/codigo03.webp",  },
+        { "id": 4, "src": "assets/codigo04.webp",  },
       ]
     }
   ]
